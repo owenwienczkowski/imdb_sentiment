@@ -51,27 +51,3 @@ for r in results:
 
 metrics = classification_report(y_true=ytrue, y_pred=ypred)
 print(metrics)
-
-
-
-
-
-
-# msa = pipeline("sentiment-analysis", model="tabularisai/multilingual-sentiment-analysis")
-# test_msa = msa("This movie was absolutely fantastic!")
-# nlptown = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
-# test_nlptown=nlptown("This movie was absolutely fantastic!")
-
-# print(test_nlptown)
-# print(test_base)
-# print(test_msa)
-
-
-# tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
-# model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment")
-# inputs = tokenizer("This movie was absolutely fantastic!", return_tensors="pt")
-# outputs = model(**inputs)
-# probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
-# labels = ["Negative", "Neutral", "Positive"]
-# print(dict(zip(labels, probs[0].detach().numpy())))
-
