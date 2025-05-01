@@ -41,3 +41,7 @@ print(msa_results)
 
 msa_bucket = evaluate_bucket( msa, 'label', model_string_msa)
 print(msa_bucket)
+
+# bucket evaluation leads to more ambiguous text entries being dropped.
+# This is not a desirable output but is important for understanding how this model works.
+# This also provides insight to potential drawbacks of this style of evaluation
