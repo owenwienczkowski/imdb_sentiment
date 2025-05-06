@@ -19,15 +19,9 @@ A modular NLP pipeline and interactive web app for sentiment analysis on IMDb mo
 ```bash
 imdb-sentiment-classifier/
 ├── app.py # Streamlit app
-├── scripts/
-│ └── run_pipeline.py # CLI workflow
 ├── src/
-│ ├── load_data.py # Dataset loading
 │ ├── preprocess.py # Tokenization and decoding
 │ ├── inference.py # Hugging Face model inference
-│ └── evaluate.py # Model evaluation
-├── outputs/ # Evaluation results and logs
-├── metrics_log.md # Logged metrics
 ├── requirements.txt # Project dependencies
 └── README.md # You are here
 ```
@@ -53,27 +47,6 @@ You can interact with the web app to upload review data, select the model type, 
 
 ## Results for Web App (Example)
 ![sentiment-metrics-1k](https://github.com/user-attachments/assets/165aab9c-a7a7-43e7-b962-0b31a2689733)
-
-## Results for Pipeline
-
-### DistilBERT
-
-| Metric     | Positive | Negative | Accuracy |
-|------------|----------|----------|----------|
-| Precision  | 0.89     | 0.95     | 0.92     |
-| Recall     | 0.93     | 0.90     |          |
-| F1-Score   | 0.91     | 0.92     |          |
-
-The DistilBERT model achieved strong performance, with balanced precision and recall across both sentiment classes. Evaluation was based on a stratified sample of 500 reviews.
-
-### Tabularisai
-
-When evaluated using label bucketing (e.g., grouping "Very Positive" and "Positive" together), the multilingual model achieved 100% accuracy on a reduced subset after removing neutral entries:
-
-Classes	Accuracy
-Positive vs Negative	1.00
-
-Neutral predictions (not present in the original dataset) were excluded dynamically to enable fair binary classification.
 
 ## Skills Demonstrated
 
