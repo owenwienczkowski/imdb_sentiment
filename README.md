@@ -1,6 +1,6 @@
 ﻿# Sentiment Classifier using Hugging Face Transformers
 
-A modular NLP pipeline and interactive web app for sentiment analysis on text using Hugging Face Transformers. This project demonstrates scalable inference, multilingual compatibility, model evaluation, and clean engineering practices.
+A modular NLP pipeline and interactive web app for sentiment analysis on text using Hugging Face Transformers. This project demonstrates scalable inference, binary and multi-class classification compatibility, model evaluation, and clean engineering practices.
 
 ## Project Overview
 
