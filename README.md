@@ -43,19 +43,18 @@ You can interact with the web app to upload review data, select the model type, 
 > Make sure you're in the project root directory and have Python 3.8+.
 
 1. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+ ```bash
+ pip install -r requirements.txt
+ ```
 2. **Run interactive web app**
   ```bash
   streamlit run app.py
   ```
-3. **OR run the pipeline**
-    ```bash
-    python -m scripts.run_pipeline
-    ```
-    
-## Results for Pipeline (Web App Results May Vary)
+
+## Results for Web App (Example)
+![sentiment-metrics-1k](https://github.com/user-attachments/assets/165aab9c-a7a7-43e7-b962-0b31a2689733)
+
+## Results for Pipeline
 
 ### DistilBERT
 
