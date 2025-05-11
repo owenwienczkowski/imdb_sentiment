@@ -18,12 +18,13 @@ A modular NLP pipeline and interactive web app for sentiment analysis on text us
 ## Directory Structure
 ```bash
 imdb-sentiment-classifier/
-├── app.py # Streamlit app
 ├── src/
 │ ├── preprocess.py # Tokenization and decoding
 │ ├── inference.py # Hugging Face model inference
-├── requirements.txt # Project dependencies
-└── README.md # You are here
+├── app.py # Streamlit app
+├── LICENSE # MIT License
+├── README.md # You are here
+└── requirements.txt # Project dependencies
 ```
 
 ## App Demo
